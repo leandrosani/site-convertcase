@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+*{
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  height: auto;
+  background-color: #282a36;
+}
+
+textarea:focus, input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+} 
+
+.container{
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 2px;
+}
+
+header{
+  background-color: #a52a2a;
+}
+
+main{
+  margin: 90px 0;
+  background-color: #282a36;
+}
+
+.title{
+  width: 90%;
+}
+
+.container-main{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  max-width: 800px;
+}
+
+header{
+  width: 100%;
+}
+
+h1,h2{
+  padding: 5px 0;
+  width: 80%;
+}
+
+.buttonArea{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 8px auto;
+  height: 300px;
+}
+
+button{
+  padding: 8px;
+  margin: 6px;
+  background-color: brown;
+  color: bisque;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+  opacity: 0.9;
+}
+
+button:hover{
+  -moz-transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+  opacity: 1;
+}
+
+#textarea{
+  resize: vertical;
+  padding: 5px;
+  margin-right: 16px 16px;
+  width: 98%;
+  max-width: 920px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #dbdbdb;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position:absolute;
+  bottom: 0;
+  background-color: #a52a2a;
+  height: 100px;
+}
+
+.container-footer{
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  max-width: 1020px;
+}
+
+
+.right-area,
+.left-area{
+  margin: 0;
+}
+
+
+  @media screen and (max-width: 780px){
+
+    header h1, h2{
+      text-align: center;
+    }
+
+    main{
+      margin: 90px auto;
+      width: 100%;
+    }
+    
+    .container-main{
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    main h2{
+      margin: 29px auto;
+    }
+    
+    .buttonArea{
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 8px 0;
+      width: 100%;
+      height: auto;
+      max-width: 740px;
+      flex-wrap: wrap;
+    }
+
+    button{
+      margin: 2px 0;
+      height: 60px;
+      width: 220px;
+    }
+
+    .container-footer{
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 1024px;
+    }
+
+    .right-area,
+    .left-area{
+      margin: 10px 0;
+    }
+    
+    footer{
+      position:relative;
+    }
+
+  }
+
+    @media screen and (max-width: 450px){
+      button{
+        width: 98%;
+      }
+    }
